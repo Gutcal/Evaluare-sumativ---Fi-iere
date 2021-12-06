@@ -1,0 +1,7 @@
+with open('INPUT.txt', 'r') as f:
+    input=f.read()
+print('Numar', 'Numele', 'Prenumele', 'Nota-1', 'Nota-2', 'Nota-3', sep='\t')
+print(input) 
+with open('Rezerva fisierului.txt', 'w') as f:
+    for linie_input in input:
+        f.write(linie_input)
